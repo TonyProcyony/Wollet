@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false"
+    android:orientation="vertical"
+    tools:context=".PaymentsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="66dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="24dp"
+            android:background="@drawable/card"
+            android:gravity="start"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Month payments: €783.9"
+                android:textColor="@color/black"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Annual payments: €600"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+            
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_add_payment"
+            style="@style/button_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Add new payment"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tv_month_payments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Month payments"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/fl_month_payments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="12dp"
+            android:orientation="vertical">
+
+            <include layout="@layout/period_payment_item" />
+
+            <include layout="@layout/period_payment_item" />
+
+            <include layout="@layout/period_payment_item" />
+
+            <include layout="@layout/period_payment_item" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_annual_payments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Annual payments"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/fl_annual_payments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="72dp"
+            android:orientation="vertical">
+
+            <include layout="@layout/period_payment_item" />
+
+            <include layout="@layout/period_payment_item" />
+
+            <include layout="@layout/period_payment_item" />
+
+            <include layout="@layout/period_payment_item" />
+
+            <include layout="@layout/period_payment_item" />
+
+            <include layout="@layout/period_payment_item" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

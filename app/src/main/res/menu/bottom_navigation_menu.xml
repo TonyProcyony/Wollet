@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+
+        android:icon="@drawable/ic_home_24"
+        android:title="Home" />
+    <item
+        android:id="@+id/categories"
+        android:enabled="true"
+        android:icon="@drawable/ic_list_24"
+        android:title="Categories" />
+    <item
+        android:id="@+id/payments"
+        android:enabled="true"
+        android:icon="@drawable/ic_wallet_24"
+        android:title="Payments"/>
+    <item
+        android:id="@+id/savings"
+        android:enabled="true"
+        android:icon="@drawable/ic_savings_24"
+        android:title="Savings" />
+    <item
+        android:id="@+id/settings"
+        android:enabled="true"
+        android:icon="@drawable/ic_settings_24"
+        android:title="Settings" />
+</menu>
